@@ -1,0 +1,3 @@
+@forward  './navBar'; // @froward means importing contents from that path('./navBar') and exporting (if somefile @use this(index.scss) then that('./navBar') file content can be used by the file who is using 
+@forward './navBarAfterLogin';
+

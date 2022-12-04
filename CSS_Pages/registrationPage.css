@@ -1,0 +1,77 @@
+
+.resPage{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+form{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(24, 24, 189);
+    border-radius: 10px;
+    background-color: rgb(67, 64, 175);
+    box-shadow: 8px 5px rgb(23, 15, 92);
+    
+}
+
+.form{
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+#req{
+    color: lightgray;
+}
+
+
+body{
+    background-image: url("../Image/wp3351566.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.sentenceL{
+    color: black;
+}
+.sentenceL a{
+    color: rgb(140,140,239);
+}
+.sentenceL a:hover{
+    color: rgb(8, 0, 255);
+}
+form label{
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+.resPage input{
+    border-radius: 5px;
+}
+form input{
+    background-color: rgb(140, 140, 239);
+    border-color: rgb(24, 24, 189);
+}
+form button{
+    background-color: rgb(140,140,239);
+    border-color: rgb(24, 24, 189);
+}
+
+form .error{
+    color: rgb(240, 95, 95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

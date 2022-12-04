@@ -1,0 +1,54 @@
+@use '../common';
+// @use '../components/navBarAfterLogin.scss';
+@use '../vars' as v;
+
+.calender{
+    padding: 0px;
+    margin: 0px;
+    .calHead{
+        padding-left: 45px;
+        .meet{
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            .rDate p{
+                margin: 0;
+                font-size:15px;
+                font-weight:bold;
+                @media(min-width:400px){
+                font-size:20px;
+                font-weight:bold;
+                }
+            }
+        }
+        .week p{
+            font-size: 15px;
+            color: rgb(67, 63, 63);
+            margin: 0px;
+        }
+        // .rDate h2{
+        //     font-size:15px;
+        //     font-weight:bold;
+        //     @media(min-width:400px){
+        //         font-size:20px;
+        //         font-weight:bold;
+        //     }
+        // }
+    }
+    .showMeeting{
+        position: relative;
+        .allMeet{
+            padding: 45px;
+            margin: 5px;
+        }
+    }
+    li{
+        padding: 3px;
+        margin: 5px;
+        height: 40px;
+        list-style-type: decimal;
+        background-color: v.$background-color;
+    }
+}
+
+

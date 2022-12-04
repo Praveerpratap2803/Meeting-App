@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    li{
+    list-style: none;
+}
+.hide{
+    display: none;
+}
+.visually-hidden {
+    position: absolute !important;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+}
+
+
+
+
+
+
+
+
+

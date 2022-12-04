@@ -1,0 +1,157 @@
+@use '../common';
+// @use '../components/navBarAfterLogin.scss';
+@use '../vars' as v;
+
+.meeting{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    .meetingNav{
+        border: 2px solid gray;
+        border-top:none ;
+        border-left: none;
+        border-right: none ;
+        margin-top: 30px;
+        a{
+            border-bottom:none ;
+            padding: 2px;
+            text-decoration: none;
+            color: blue;
+            &:hover{
+                cursor: pointer;
+                border: 2px solid gray;
+                color: black;
+            }
+            
+        }
+        .active{
+            text-decoration: none;
+            border: 2px solid gray;
+            border-bottom: white;
+            color: black;
+        }
+    }
+    .meetingMain{
+        form{
+            label{
+                display: block;
+                
+                margin: 5px 0;
+            }
+            input,select,textarea,button{
+                margin: 5px 0;
+                padding: 5px;
+            }
+            input,textarea{
+                width: 100%;
+             
+            }
+            .nBlock{
+                display: inline;
+            }
+            .error{
+                color: red;
+            }
+        }
+        
+    }
+    .addmeeting {
+        padding: 15px;
+        margin: 15px 0;
+        background-color: v.$background-color;
+        color: black; 
+        h2{
+            background-color: v.$background-color;
+            color: black
+        }
+        .nameOfMeet{
+            margin: 5px;
+            margin-left: 0;
+            
+            
+        }
+    }
+    .matchingMeets{
+        /*border: 1px solid gray;*/
+        padding-top: 20px;
+        .meetSep{
+            /*padding: 5px;*/
+            padding: 5px;
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+            border: 1px solid black;
+            .excuseBtn{
+                
+                padding: 5px;
+                margin: 5px;
+                background-color: rgb(223, 0, 0);
+                color: white;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .strAttendees{
+                font-size:20px;
+            }
+            .excusePart {
+                .meetDateFilter {
+                    font-weight:bold;
+                    font-size:30px;
+                }
+                .meetTimeFilter {
+                    color:#575757;
+                    font-size:20px;
+                }
+                .meetNameFilter {
+                    font-size:20px;
+                }
+            }
+            .addMemberForm{
+                .addMemberButton{
+                    margin: 5px;
+                    padding: 5px;
+                    background-color: v.$background-color;
+                    color: black;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .addMemberContent{
+                    margin: 10px;
+                    padding: 5px;
+                    display: inline;
+                }
+                .addMember{
+                    margin: 5px;
+                    padding: 5px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

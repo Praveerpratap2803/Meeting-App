@@ -1,0 +1,144 @@
+@use '../common';
+// @use '../components/navBarAfterLogin.scss';
+@use '../vars' as v;
+
+.teams{
+        
+    padding: 10px;
+    margin: 10px;
+    #viewPara{
+        color: rgb(57, 52, 52);
+    }
+    .teamsContent{
+        display: flex;
+        flex-wrap: wrap; /* don't over flow , it comes to the next line */
+        
+        .boxContainer{
+            width: 90%;
+            margin: 10px;
+            
+            border: 1px solid black;
+            padding: 5px;
+            @media (min-width:v.$media-team-small){
+                
+                    width: 45%;
+                    margin: 10px;
+                    
+                    border: 1px solid black;
+                    padding: 5px;
+            
+                    
+                
+            }
+            @media (min-width:v.$media-team-large){
+                
+                    width: 30%;
+                    margin: 10px;
+                    
+                    border: 1px solid black;
+                    padding: 5px;
+            
+                    
+                
+            }
+            .excusePart{
+                .excuseBtn{
+                    
+                    padding: 5px;
+                    margin: 5px 0;
+                    background-color: rgb(223, 0, 0);
+                    color: white;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .teamName{
+                    font-size:20px;
+                    font-weight:bold;
+                }
+                .shortName{
+                    font-size:15px;
+                    font-weight:bold;
+                }
+            }
+            .addTeamForm{
+                padding: 5px;
+                #addTeamButton{
+                    
+                    margin: 5px 0;
+                    padding: 5px;
+                    width: 90%;
+                    background-color: v.$background-color;
+                    color: black;
+                }
+                #teamName,
+                #teamShortName,
+                #teamDescription{
+                    margin: 5px 0;
+                    width: 90%;
+                }
+                #addMemAddForm{
+                    width: 60%;
+                    margin: 5px 0;
+                    padding: 5px;
+                }
+            }
+            #plusSign {
+                margin: 40% 40% 40% 40%;
+                font-size: 50px;
+                
+                width: auto;
+                height: auto;
+                &:hover{
+                    cursor: pointer;
+                }
+                #plusBottom{
+                    color: white;
+                    border: none;
+                }
+                
+            }
+            
+            .memberTeams{
+                word-wrap: break-word;
+            }
+            .addMemberForm{
+                .addMemberContent{
+                    margin: 10px;
+                    padding: 5px;
+                    display: inline;
+                    
+                }
+                .addMember{
+                    margin: 5px;
+                    
+                    width: 60%;
+                    display: flex;
+                }
+                .addMemberButton{
+                    margin: 5px;
+                    padding: 5px;
+                    background-color: rgb(122, 192, 203);
+                    color: black;
+                }
+                .addMemberContent{
+                    margin: 10px;
+                    padding: 5px;
+                    display: inline;
+                    
+                }
+                .addMember,.addMembers{
+                    margin: 5px 0;
+                    padding: 5px;
+                    width: 60%;
+                    display: flex;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+
+

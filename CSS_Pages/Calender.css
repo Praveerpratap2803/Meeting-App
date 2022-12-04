@@ -1,0 +1,48 @@
+
+.calender{
+    padding: 0px;
+    margin: 0px;
+}
+.meet{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.meet .rDate p{
+    margin: 0;
+}
+.calender li{
+    padding: 3px;
+    margin: 5px;
+    height: 40px;
+    list-style-type: decimal;
+    background-color: rgb( 115, 200, 213 );
+}
+.allMeet{
+    padding: 45px;
+    margin: 5px;
+}
+
+.calHead{
+    padding-left: 45px;
+    
+}
+.calHead .week p{
+    font-size: 20px;
+    color: gray;
+    margin: 0px;
+
+}
+.calHead .rDate p{
+    font-size:25px;
+    font-weight:bold
+}
+
+.showMeeting{
+    position: relative;
+}
+
+

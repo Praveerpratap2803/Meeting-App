@@ -1,0 +1,308 @@
+.teams{
+        
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+#viewPara{
+    color: rgb(57, 52, 52);
+}
+
+.teamsContent{
+    display: flex;
+    flex-wrap: wrap; /* don't over flow , it comes to the next line */
+}
+.boxContainer{
+    width: 90%;
+    margin: 10px;
+    
+    border: 1px solid black;
+    padding: 5px;
+
+    
+}
+.boxContainer .excuseBtn{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(223, 0, 0);
+    color: white;
+}
+
+
+.addMemberForm .addMemberContent{
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+    
+}
+.addMemberForm .addMember{
+    margin: 5px;
+    
+    width: 60%;
+    display: flex;
+}
+
+.boxContainer .addTeamForm{
+    padding: 5px;
+}
+.addMemberButton{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(71, 171, 186);
+    color: white;
+}
+#addTeamButton{
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    background-color: rgb(71, 171, 186);
+    color: white;
+}
+.addMemberContent{
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+    
+}
+
+.addMember,.addMembers{
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    display: flex;
+}
+#teamName,
+#teamShortName,
+#teamDescription{
+    margin: 5px;
+    width: 90%;
+}
+
+#plusSign img{
+    margin: 40% 40% 40% 40%;
+    width: auto;
+    height: auto;
+    
+}
+.boxContainer .teamName{
+    font-size:20px;
+    font-weight:bold;
+}
+.boxContainer .shortName{
+    font-size:15px;
+    font-weight:bold;
+}
+.memberTeams{
+    word-wrap: break-word;
+}
+@media (min-width:500px){
+    .teams{
+        
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    
+    #viewPara{
+        color: rgb(57, 52, 52);
+    }
+    
+    .teamsContent{
+        display: flex;
+        flex-wrap: wrap; /* don't over flow , it comes to the next line */
+    }
+    .boxContainer{
+        width: 45%;
+        margin: 10px;
+        
+        border: 1px solid black;
+        padding: 5px;
+    
+        
+    }
+    .boxContainer .excuseBtn{
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(223, 0, 0);
+        color: white;
+    }
+    
+    
+    .addMemberForm .addMemberContent{
+        margin: 10px;
+        padding: 5px;
+        display: inline;
+        
+    }
+    .addMemberForm .addMember{
+        margin: 5px;
+        
+        width: 60%;
+        display: flex;
+    }
+    
+    .boxContainer .addTeamForm{
+        padding: 5px;
+    }
+    .addMemberButton{
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(71, 171, 186);
+        color: white;
+    }
+    #addTeamButton{
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        background-color: rgb(71, 171, 186);
+        color: white;
+    }
+    .addMemberContent{
+        margin: 10px;
+        padding: 5px;
+        display: inline;
+        
+    }
+    
+    .addMember,.addMembers{
+        margin: 5px;
+        padding: 5px;
+        width: 60%;
+        display: flex;
+    }
+    #teamName,
+    #teamShortName,
+    #teamDescription{
+        margin: 5px;
+        width: 90%;
+    }
+    
+    #plusSign img{
+        margin: 40% 40% 40% 40%;
+        width: auto;
+        height: auto;
+        
+    }
+    .boxContainer .teamName{
+        font-size:20px;
+        font-weight:bold;
+    }
+    .boxContainer .shortName{
+        font-size:15px;
+        font-weight:bold;
+    }
+    .memberTeams{
+        word-wrap: break-word;
+    }
+}
+@media (min-width:800px){   
+
+    .teams{
+        
+        padding: 10px;
+        margin: 10px;
+        
+    }
+
+    #viewPara{
+        color: rgb(57, 52, 52);
+    }
+
+    .teamsContent{
+        display: flex;
+        flex-wrap: wrap;/* don't over flow , it comes to the next line */
+    }
+    .boxContainer{
+        width: 30%;
+        margin: 10px;
+        
+        border: 1px solid black;
+        padding: 5px;
+
+        
+    }
+    .boxContainer .excuseBtn{
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(223, 0, 0);
+        color: white;
+    }
+
+
+    .addMemberForm .addMemberContent{
+        margin: 10px;
+        padding: 5px;
+        display: inline;
+        
+    }
+    .addMemberForm .addMember{
+        margin: 5px;
+        
+        width: 60%;
+        display: flex;
+    }
+
+    .boxContainer .addTeamForm{
+        padding: 5px;
+    }
+    .addMemberButton{
+        margin: 5px;
+        padding: 5px;
+        background-color: rgb(71, 171, 186);
+        color: white;
+    }
+    #addTeamButton{
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        background-color: rgb(71, 171, 186);
+        color: white;
+    }
+    .addMemberContent{
+        margin: 10px;
+        padding: 5px;
+        display: inline;
+        
+    }
+
+    .addMember,.addMembers{
+        margin: 5px;
+        padding: 5px;
+        width: 60%;
+        display: flex;
+    }
+    #teamName,
+    #teamShortName,
+    #teamDescription{
+        margin: 5px;
+        width: 90%;
+    }
+
+    #plusSign img{
+        margin: 40% 40% 40% 40%;
+        width: auto;
+        height: auto;
+        
+    }
+    .boxContainer .teamName{
+        font-size:20px;
+        font-weight:bold;
+    }
+    .boxContainer .shortName{
+        font-size:15px;
+        font-weight:bold;
+    }
+    .memberTeams{
+        word-wrap: break-word;
+    }
+
+
+
+}
+
+
+
+
+
+

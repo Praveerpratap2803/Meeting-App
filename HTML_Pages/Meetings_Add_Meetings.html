@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS_Pages/app.css">
+    <link rel="stylesheet" href="../CSS_Pages/normalize.css">
+    
+    <link rel="stylesheet" href="../CSS_Pages/navBarAfterLogin.css" >
+    <link rel="stylesheet" href="../CSS_Pages/Meetings.css" >
+    <script defer src="../JS_Pages/services/auth.js"></script>
+    <script defer src="/JS_Pages/Pages/nav.js"></script>
+    <script defer src="/JS_Pages/services/addingMeeting.js"></script>
+    <script defer src="/JS_Pages/Pages/addAMeeting.js"></script>
+    <script defer src="../JS_Pages/services/navBar.js"></script>
+    <script defer src="../JS_Pages/services/validationAddMeeting.js"></script>
+
+</head>
+<body>
+    <nav class="navBar">
+        <div class="mobile">
+            <span>MyMeetings</span>
+            <span class="mobileR"><img src="../Image/bars-solid.svg" alt="Nav Icon" width="15px" height="15px" style="border: 1px solid black; " class="menu"><a href="Login_Page.html"  class="logout" id="log">logout</a></span>
+        </div>
+    
+        <span class="navl navMob">
+            <ul>
+                <li><a href="Calender.html" class="logout">Calender</a></li>
+                <li><a href="Meetings_Add_Meetings.html" class="logout ">Meetings</a></li>
+                <li><a href="Teams.html" class="logout">Teams</a></li>
+            </ul>
+        </span>
+        <span class="navr">
+            <ul>
+                
+                <li>Hello <a class="id" href="#"></a></li>
+                <li><a href="Login_Page.html"  class="logout" id="logou">logout</a></li>
+            </ul>
+        </span>   
+    </nav>
+
+    <div class="meeting">
+        <h1>Meetings</h1>
+        <hr>
+        <div class="meetingNav">
+            <a href="Meetings_Filter.html" >Filter / Search meetings</a>
+            <a href="Meetings_Add_Meetings.html" class="active">Add a meetings</a>
+
+        </div>
+        <main class="meetingMain">
+            <form action="https://mymeetingsapp.herokuapp.com/api/meetings" method="post" id="addForm">
+                <div class="addmeeting">
+                    <h2>Add a meeting</h2>
+                    <hr/>
+                    <div class="nameOfMeet formContent">
+                        <label for="meetName">Name</label>
+                        <input
+                            type="text"
+                            id="meetName"
+                            name="meetName"
+                        />
+                        <p class="message"></p>
+                    </div>
+                    <div class="meetNewAdd formContent">
+                        <label for="meetAdd">Date</label>
+                        
+                            <input
+                                type="date"
+                                id="meetAdd"
+                                name="meetAdd"
+                                
+                                required
+                                autofocus
+                            />
+                            <p class="message error"></p>
+                        
+
+                        <div class="startTime formContent">
+                            
+                            
+                                <label for="hourStart">Start time (hh:mm)</label>
+                                <select id="hourStart" name="hourStart">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                  </select>
+                                  :
+                                  <label for="minutesStart" class="nBlock"></label>
+                                  <select id="minutesStart" name="minutesStart">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                  </select>
+                                  <p class="message error"></p>
+                            
+                        </div>
+                        <div class="EndTime formContent">
+                            
+                            
+                                <label for="hourEnd">End Time (hh:mm)</label>
+                                <select id="hourEnd" name="hourEnd">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                  </select>
+                                  :
+                                  <label for="minutesEnd" class="nBlock"></label>
+                                  <select id="minutesEnd" name="minutesEnd">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                  </select>
+                                  <p class="message error"></p>
+                            
+                            
+                        </div>
+                        <div class="formContent">
+                            <label for="description">Description</label>
+                            
+                            <textarea 
+                                id="description"
+                                cols="30"
+                                rows="3"
+                                placeholder="What is agenda of the meeting?"
+                            ></textarea>
+                            
+                        </div>
+                        <div class="formContent">
+                            <label for="emailIdCollection" class="form email">Email IDs of attendees, or team's short </label>
+                            
+                                <input 
+                                    type="email"  
+                                    id="emailIdCollection"
+                                    name="emailIdCollection"
+                                    required
+                                    
+                                    placeholder="example@example.com" 
+                                    pattern="[A-Za-z0-9\._]+@(example.com)$"
+                                />
+                                
+                            
+                        </div>
+                        <div class="form">
+                            <button type="submit"> Add meeting</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+        </main>
+    </div>
+
+
+</body>
+
+
+
+
+

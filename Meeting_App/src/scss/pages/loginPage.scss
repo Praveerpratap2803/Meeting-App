@@ -1,0 +1,82 @@
+@use '../common';
+//@use '../components/navBar';
+
+#loginBody{
+    
+    //background-image: url("../../../Image/wp3351566.jpg");
+    
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10%;
+    
+    .loginPage{
+        
+        display: flex;
+        justify-content: center;
+        
+        input{
+            border-radius: 5px;
+        }
+        form{
+            padding: 10px 5px;
+            margin: 10px 0;
+            border: 2px solid rgb(3 3 3);
+            border-radius: 10px;
+            background-color: rgb(150, 147, 235);
+            
+            box-shadow: 8px 5px rgb(153, 143, 237);
+            .form{
+                padding: 10px 0;
+                margin: 10px 0;
+                display: block;
+                .sentenceL{
+                    color: black;
+                    margin: 5px 0;
+                    a{
+                        color: rgb(9, 9, 15);
+                        &:hover{
+                            cursor: pointer;
+                            color: rgb(0, 51, 123);
+                        }
+                    }
+                }
+            }
+            .error{
+                // color:rgb(255, 0, 0);
+                color:#600606;
+            }
+            label{
+                font-weight: bolder;
+                font-size: x-large;
+            }
+            input{
+                background-color: rgb(140, 140, 239);
+                border-color: rgb(24, 24, 189);
+            }
+            button{
+                
+                background-color: rgb(140,140,239);
+                border-color: rgb(24, 24, 189);
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+.navBar {
+  padding: 5px;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+@media (min-width: 700px) {
+  .navBar .navBar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBar .navBar ul li {
+    padding-left: 0;
+    margin: 0;
+    border: none;
+  }
+}
+.navBar .mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.navBar .mobile .menu {
+  margin-top: 3px;
+  margin-right: 7px;
+}
+.navBar .mobile .menu:hover {
+  background-color: gray;
+}
+@media (min-width: 700px) {
+  .navBar .mobile {
+    display: none;
+  }
+}
+.navBar .navl, .navBar .navr {
+  display: none;
+}
+@media (min-width: 700px) {
+  .navBar .navl li, .navBar .navr li {
+    background-color: lightgray;
+    display: inline;
+  }
+}
+@media (min-width: 700px) {
+  .navBar .navl {
+    display: contents;
+  }
+  .navBar .navl ul {
+    margin: 16px 0 0 0;
+  }
+  .navBar .navl ul li:hover {
+    padding-left: 0;
+    margin: 0;
+    border: none;
+    /* width: 30%; */
+  }
+}
+@media (min-width: 700px) {
+  .navBar .navr {
+    display: contents;
+  }
+  .navBar .navr .id {
+    text-decoration: none;
+    color: blue;
+  }
+}
+@media (min-width: 700px) {
+  .navBar .navMob {
+    display: contents;
+  }
+}
+.navBar .navMob ul {
+  padding-left: 0;
+  margin: 5px 0 0 0;
+  /* width: 30%; */
+}
+.navBar .navMob ul li {
+  padding-bottom: 1px;
+  margin: 3px;
+  border: 3px solid black;
+  /* width: 30%; */
+}
+.navBar .navMob ul li:hover {
+  padding-left: 0;
+  margin: 0;
+  background-color: darkgray;
+  /* width: 30%; */
+}
+.navBar .logout {
+  padding: 6px;
+  text-decoration: none;
+  color: rgb(79, 71, 71);
+}
+.navBar .logout:hover {
+  /* background-color: gray; */
+  /*border: 1px solid black;*/
+  color: black;
+}
+@media (min-width: 700px) {
+  .navBar .logout:hover {
+    background-color: gray;
+  }
+}
+
+/*# sourceMappingURL=navBarAfterLogin.css.map */
