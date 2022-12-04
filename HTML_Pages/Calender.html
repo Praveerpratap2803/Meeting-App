@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS_Pages/normalize.css">
+    <link rel="stylesheet" href="../CSS_Pages/app.css">
+    <link rel="stylesheet" href="../CSS_Pages/navBarAfterLogin.css" >
+
+    <link rel="stylesheet" href="../CSS_Pages/Calender.css">
+    
+    <script defer src="/JS_Pages/services/auth.js"></script>
+    <script defer src="/JS_Pages/Pages/nav.js"></script>
+    <script defer src="/JS_Pages/services/allMeetCalender.js"></script>
+    <script defer src="../JS_Pages/Pages/calender.js"></script>
+    <script defer src="../JS_Pages/services/navBar.js"></script>
+     
+   
+    
+</head>
+<body>
+    
+    
+    <nav class="navBar">
+            <div class="mobile">
+                <span>MyMeetings</span>
+                <span class="mobileR">
+                    <img src="../Image/bars-solid.svg" alt="Nav Icon" width="15px" height="15px" style="border: 1px solid black; " class="menu">
+                    <a href="Login_Page.html"  class="logout" id="log">logout</a>
+                </span>
+            </div>
+        
+            <span class="navl navMob">
+                <ul >
+                    <li ><a href="Calender.html" class="logout ">Calender</a></li>
+                    <li><a href="Meetings_Add_Meetings.html" class="logout">Meetings</a></li>
+                    <li><a href="Teams.html" class="logout">Teams</a></li>
+                </ul>
+            </span>
+            
+            <span class="navr">
+                <ul>
+                    
+                    <li>Hello <a class="id" href="#"></a></li>
+                    <li><a href="Login_Page.html"  class="logout" id="logou">logout</a></li>
+                </ul>
+            </span>   
+    </nav>
+    <!--
+    <nav class="navBar navBarMobile">
+        
+            <span class="navl ">
+                <ul>
+                    
+                </ul>
+            </span>
+            <span class="navr">
+                <ul>
+                    
+                    <img src="../Image/bars-solid.svg" alt="Nav Icon" width="10px" height="10px">
+                    <li><a href="Registration_Page.html"  class="logout" id="log">logout</a></li>
+                </ul>
+            </span>   
+    </nav>
+    -->
+    <!--
+    <nav class="navBar navBarMobile">
+        
+        <div class="navRight">
+            
+            <a href="Calender.html" class="logout">Calender</a>
+            <a href="Meetings_Add_Meetings.html" class="logout">Meetings</a>
+            <a href="Teams.html" class="logout">Teams</a>
+        </div>
+        <img src="../Image/bars-solid.svg" alt="Nav Icon" width="10px" height="10px">
+    </nav>-->
+    
+        <div class="calender" id="showCalender">
+            <div class="calHead">
+                <h1>Calender</h1>
+                <hr>
+                
+                <div class="meet">
+                    <div class="rDate" >
+                        
+                    </div>
+                    <label for="meet" class="visually-hidden">Date</label>
+                    <input
+                        type="date"
+                        id="meet"
+                        name="meet" 
+                        
+                        
+                    />
+                </div>
+                <div class="week"></div>
+            </div>
+            <div class="showMeeting">
+                <ol start="0" >
+                    <li class="hour0"></li>
+                    <li class="hour1"></li>
+                    <li class="hour2"></li>
+                    <li class="hour3"></li>
+                    <li class="hour4"></li>
+                    <li class="hour5"></li>
+                    <li class="hour6"></li>
+                    <li class="hour7"></li>
+                    <li class="hour8"></li>
+                    <li class="hour9"></li>
+                    <li class="hour10"></li>
+                    <li class="hour11"></li>
+                    <li class="hour12"></li>
+                    <li class="hour13"></li>
+                    <li class="hour14"></li>
+                    <li class="hour15"></li>
+                    <li class="hour16"></li>
+                    <li class="hour17"></li>
+                    <li class="hour18"></li>
+                    <li class="hour19"></li>
+                    <li class="hour20"></li>
+                    <li class="hour21"></li>
+                    <li class="hour22"></li>
+                    <li class="hour23"></li>
+                    
+                    
+                    
+                </ol>
+            </div>
+            <!--<div class="meetInCalender"></div>-->
+        </div>
+
+
+</body>
+</html>

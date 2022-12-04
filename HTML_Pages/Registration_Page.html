@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrationPage</title>
+    <link rel="stylesheet" href="../CSS_Pages/normalize.css">
+    <link rel="stylesheet" href="../CSS_Pages/app.css">
+    <link rel="stylesheet" href="../CSS_Pages/navBar.css" >
+    <link rel="stylesheet" href="../CSS_Pages/registrationPage.css" >
+    <!-- <link rel="stylesheet" href="../CSS_Pages/navBar.css" > -->
+    <script defer src="/JS_Pages/services/resAuth.js"></script>
+    <script defer src="/JS_Pages/Pages/registration.js"></script>
+    <script defer src="/JS_Pages/services/registerValidation.js"></script>
+
+</head>
+<body>
+    
+    <nav class="navBar">
+        <ul>
+            <li><a href="Login_Page.html" id="logou">login</a></li>
+        </ul>
+    </nav>
+
+    <main class="resPage">
+    
+    
+        <form action="https://mymeetingsapp.herokuapp.com/api/auth/register" method="post" id="resFormContent">
+            <h1>User Registration</h1>
+            <div class="formContent">
+                <label for="name" class="form name">Name</label>
+                <input 
+                    type="text"  
+                    id="name"
+                    name="name"
+                    placeholder="Enter Name"
+                    value="Praveer Pratap"
+                    required
+                    autofocus
+                />
+                <p class="message error"></p>
+            </div>
+            <div class="formContent">
+                <label for="emailID" class="form email">Email ID</label>
+                <input 
+                    type="email"  
+                    id="emailID"
+                    name="emailID"
+                    placeholder="example@example.com" 
+                    pattern="[A-Za-z0-9\._]+@(example.com)$"
+                    value="praveer@example.com"
+                    required
+                   
+                />
+                <p class="message error"></p>
+            </div>
+            <div class="formContent">
+                <label for="password" class="form password" aria-describedby="req">Password</label>
+                <input 
+                    type="password"  
+                    id="password"
+                    name="password"
+                    value="Praveer@1234"
+                    placeholder="Enter Password"
+                    required
+                    
+                />
+                <p class="message error"></p>
+                <!--<div class="form" id="req" >
+                    
+                </div>-->
+            </div>
+            <div class="formContent">
+                <label for="confirmPassword" class="form confirmPassword">Confirm Password</label>
+                <input 
+                    type="password"  
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Enter Confirm Password"
+                    value="Praveer@1234"
+                    required
+                    
+                />
+                <p class="message error"></p>
+            </div>
+            
+            <div class="form">
+                <!--<button  id="login">Sign in </button>-->
+                <button type="submit"  id="submit"> Register</button>
+                <div class="sentenceL">
+                    Already have a account <a href="Login_Page.html">Sign in</a>
+                </div>
+            </div>
+        </form>
+    
+    </main>
+
+
+</body>
+</html>

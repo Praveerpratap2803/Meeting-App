@@ -1,0 +1,134 @@
+
+.meeting{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.meeting .addmeeting h2{
+    
+    background-color: rgb( 115, 200, 213 );
+    color: white;
+}
+.meeting .addmeeting {
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb( 115, 200, 213 );
+    color: black; 
+}
+
+.meeting .meetingNav{
+    border: 2px solid gray;
+    border-top:none ;
+    border-left: none;
+    border-right: none ;
+    margin-top: 30px;
+
+}
+.meeting .meetingNav a{
+    border-bottom:none ;
+    padding: 2px;
+    
+    text-decoration: none;
+    color: blue;
+}
+.meeting .meetingNav a:hover{
+    text-decoration: none;
+    border: 2px solid gray;
+    border-bottom: none;
+    color: black;
+}
+.meeting .meetingNav a:active {
+    text-decoration: none;
+    border: 2px solid gray;
+    border-bottom: none;
+    color: black;
+    
+}
+
+.matchingMeets{
+    /*border: 1px solid gray;*/
+    padding-top: 20px;
+
+}
+    
+.meetSep{
+    /*padding: 5px;*/
+    padding: 5px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    border: 1px solid black;
+    
+}
+.meetSep .excuseBtn{
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+}
+
+.addMemberForm .addMemberButton{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb( 115, 200, 213 );
+    color: white;
+}
+.addMemberForm .addMemberContent{
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+}
+.addMemberForm .addMember{
+    margin: 5px;
+    padding: 5px;
+    
+}
+.nameOfMeet{
+    margin: 5px;
+    margin-left: 0;
+    
+    
+}
+form label{
+    display: block;
+    
+    margin: 5px;
+}
+form input,select,textarea,button{
+    margin: 5px;
+    padding: 5px;
+}
+form input,textarea{
+   width: 100%;
+
+}
+form .nBlock{
+    display: inline;
+}
+form .error{
+    color: red;
+}
+.excusePart .meetDateFilter {
+    font-weight:bold;
+    font-size:30px;
+}
+.excusePart .meetTimeFilter {
+    color:gray;font-size:20px;
+}
+.excusePart .meetNameFilter {
+    font-size:20px;
+}
+.meetSep .strAttendees{
+    font-size:20px;
+}
+.meeting .meetingNav .active{
+    text-decoration: none;
+    border: 2px solid gray;
+    border-bottom: white;
+    color: black;
+}
+
+

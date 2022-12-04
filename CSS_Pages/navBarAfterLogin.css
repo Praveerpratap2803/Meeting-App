@@ -1,0 +1,131 @@
+.navBar{
+    padding: 5px;
+    background-color:lightgray;
+    margin-bottom: 10px;
+    
+    
+}
+.logout{
+        
+    padding: 6px;
+    text-decoration: none;
+    color: rgb(79, 71, 71); 
+}
+.logout:hover{
+    /* background-color: gray; */
+    /*border: 1px solid black;*/
+    color:black;
+}
+.navl,.navr{
+    display: none;
+}
+.navMob ul{
+    padding-left: 0;
+    margin: 5px 0 0 0;
+    /* width: 30%; */    
+}
+.navMob ul li{
+    padding-bottom: 1px;
+    margin: 3px;
+    border: 3px solid black;
+    /* width: 30%; */    
+}
+.navMob ul li:hover{
+    padding-left: 0;
+    margin: 0;
+    border: 3px solid black;
+    background-color: darkgray;
+    /* width: 30%; */    
+}
+
+
+.mobile{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    margin-top: 3px;
+    margin-right: 7px;
+}
+.menu:hover{
+    background-color: gray;  
+}
+
+
+@media (min-width:700px){
+    .navl,.navr,.navMob{
+        display: contents;
+    }
+    .navBar ul li{
+        padding-left: 0;
+        margin: 0;
+        border: none;
+    }
+    .navBar{
+        padding: 5px;
+        background-color:lightgray;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .logout{
+        
+        padding: 6px;
+        text-decoration: none;
+        color: rgb(79, 71, 71); 
+    }
+    .logout:hover{
+        background-color: gray;
+        /*border: 1px solid black;*/
+        color:black;
+    }
+    /* 1280 x 1024, and also separately on a mobile display of dimensions 375 x 812 */
+    .navBar .navBarMobile {
+        display: none;
+    }
+    .navBar .navl li{
+        
+        background-color: lightgray;
+        display: inline;
+    }
+    .navBar .navr li{
+        
+        background-color: lightgray;
+        display: inline;
+    }
+    .id{
+        text-decoration: none;
+        color: blue;
+    }
+    .mobile{
+        display: none;
+    }
+    .navl ul li:hover{
+        padding-left: 0;
+        margin: 0;
+        border: none;
+        /* width: 30%; */    
+    }
+    .navl ul{
+        margin: 16px 0 0 0;
+    }
+}
+/*
+@media (max-width : 375px){
+    .navBar .navBarDesktop{
+        display: none;
+    }
+    .navBar .navBarMobile img{
+        display: flex;
+        justify-content: end;
+    }
+    .navBarMobile .navRight{
+        display: none;
+    }
+}
+
+*/
+
+
